@@ -32,6 +32,14 @@ header h1 {
     border-top: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+/* サブ情報 (日時・場所) */
+.header-info p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
 /* ハッシュタグのリンクスタイル */
 .tweet-button {
     color: #FFA726; /* オレンジ色 */
