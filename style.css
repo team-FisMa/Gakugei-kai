@@ -1,50 +1,121 @@
+/* 全体のデザイン */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #f9f9f9; /* わずかにオフホワイトの背景 */
 }
 
+/* ヘッダー */
 header {
     background-color: #0056b3;
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* メインコンテンツ */
 main {
-    padding: 20px;
+    padding: 25px;
+    max-width: 900px;
+    margin: 50px auto 20px auto;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* わずかに影を残す */
+    border-radius: 12px;
 }
 
-h1, h2, h3 {
-    margin: 0 0 10px;
+/* タイトルデザイン（セクションの区切りを明確に） */
+h2 {
+    border-bottom: 3px solid #0056b3; /* 青いラインを追加 */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #0056b3;
+    font-size: 1.6em;
 }
 
+/* サブタイトル (h3) */
+h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 表デザイン */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 25px 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 table th, table td {
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: 1px solid #ddd;
+    padding: 14px;
     text-align: left;
 }
 
 table th {
-    background-color: #f4f4f4;
-}
-
-.speaker {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #222;
+    background-color: #0056b3;
     color: white;
+    font-weight: bold;
+}
+
+/* 奇数行の背景色を変えて見やすく */
+table tr:nth-child(odd) {
+    background-color: #f0f5ff;
+}
+
+/* 時間カラムのスタイル */
+table td:first-child {
+    font-weight: bold;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+}
+
+/* セクションの余白を自然に */
+section {
+    margin-bottom: 50px;
+}
+
+/* ボタンスタイル */
+.button {
+    display: inline-block;
+    background: #FFA726;
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1.1em;
+}
+
+.button:hover {
+    background: #e68900;
+}
+
+/* モバイル対応 */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    main {
+        padding: 20px;
+    }
+    table th, table td {
+        padding: 10px;
+    }
 }
