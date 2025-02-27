@@ -135,6 +135,10 @@ section {
     margin-bottom: 50px;
 }
 
+footer {
+    text-align: center;
+}
+
 /* ボタンスタイル */
 .button {
     display: inline-block;
