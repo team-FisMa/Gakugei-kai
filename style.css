@@ -139,23 +139,6 @@ footer {
     text-align: center;
 }
 
-/* ボタンスタイル */
-.button {
-    display: inline-block;
-    background: #FFA726;
-    color: white;
-    padding: 12px 18px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
-    font-size: 1.1em;
-}
-
-.button:hover {
-    background: #e68900;
-}
-
 /* VRChat会場ボタン */
 .vrchat-button {
     display: inline-block;
