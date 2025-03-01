@@ -5,18 +5,18 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f9f9f9; /* わずかにオフホワイトの背景 */
+    background-color: #f9f9f9;
 }
 
-/* ヘッダーのスタイル */
+/* ヘッダー */
 header {
     background: linear-gradient(to bottom, #0056b3, #004494);
     color: white;
     padding: 30px 20px;
     text-align: center;
+    border-bottom: 4px solid #003f7f;
 }
 
-/* ヘッダーのタイトル */
 header h1 {
     margin: 0;
     font-size: 2.5em;
@@ -32,17 +32,9 @@ header h1 {
     border-top: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-/* サブ情報 (日時・場所) */
-.header-info p {
-    font-size: 1.2em;
-    font-weight: 500;
-    margin: 5px 0;
-    opacity: 0.9;
-}
-
-/* VRChatリンクのデザイン */
+/* VRChatワールドリンク */
 .vrchat-link {
-    color: #FFA726; /* 明るいオレンジ */
+    color: #FFA726;
     font-weight: bold;
     text-decoration: none;
     padding: 3px 6px;
@@ -55,19 +47,20 @@ header h1 {
     background-color: #FFA726;
 }
 
-/* ハッシュタグのリンクスタイル */
+/* ハッシュタグボタン */
 .tweet-button {
-    color: #FFA726; /* オレンジ色 */
-    font-weight: bold;
-    text-decoration: none;
+    display: inline-block;
+    background: #1DA1F2;
+    color: white;
     padding: 5px 10px;
+    text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .tweet-button:hover {
-    color: white;
-    background-color: #FFA726;
+    background: #0d8af2;
 }
 
 /* メインコンテンツ */
@@ -76,27 +69,26 @@ main {
     max-width: 900px;
     margin: 50px auto 20px auto;
     background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* わずかに影を残す */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
 }
 
-/* タイトルデザイン（セクションの区切りを明確に） */
+/* セクションタイトル */
 h2 {
-    border-bottom: 3px solid #0056b3; /* 青いラインを追加 */
+    border-bottom: 3px solid #0056b3;
     padding-bottom: 5px;
     margin-bottom: 20px;
     color: #0056b3;
-    font-size: 1.6em;
 }
 
-/* サブタイトル (h3) */
+/* サブタイトル */
 h3 {
     font-size: 1.3em;
     color: #333;
     margin-bottom: 10px;
 }
 
-/* 表デザイン */
+/* タイムテーブルデザイン */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -119,33 +111,25 @@ table th {
     font-weight: bold;
 }
 
-/* 奇数行の背景色を変えて見やすく */
+/* 奇数行の背景色 */
 table tr:nth-child(odd) {
     background-color: #f0f5ff;
 }
 
-/* 時間カラムのスタイル */
+/* 時間カラム */
 table td:first-child {
     font-weight: bold;
     text-align: center;
 }
 
-/* セクションの余白を自然に */
-section {
-    margin-bottom: 50px;
-}
-
-footer {
-    text-align: center;
-}
-
 /* VRChat会場ボタン */
 .vrchat-button {
+    display: inline-block;
     background: #0084ff;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 15px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -167,11 +151,12 @@ footer {
 
 /* フォーム提出ボタン */
 .form-button {
+    display: inline-block;
     background: #FF5722;
     color: white;
-    padding: 5px 7px;
+    padding: 10px 15px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -180,15 +165,10 @@ footer {
     background: #E64A19;
 }
 
-/* モバイル対応 */
-@media (max-width: 600px) {
-    body {
-        font-size: 15px;
-    }
-    main {
-        padding: 20px;
-    }
-    table th, table td {
-        padding: 10px;
-    }
+/* PDF埋め込みエリア */
+.pdf-container {
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f8f8f8;
 }
