@@ -14,7 +14,6 @@ header {
     color: white;
     padding: 30px 20px;
     text-align: center;
-    border-bottom: 4px solid #003f7f;
 }
 
 header h1 {
@@ -30,6 +29,13 @@ header h1 {
     padding-top: 10px;
     display: inline-block;
     border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    background: linear-gradient(to bottom, #0056b3, #004494);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
 }
 
 /* VRChatワールドリンク */
@@ -171,4 +177,30 @@ table td:first-child {
     padding: 10px;
     border-radius: 8px;
     background: #f8f8f8;
+}
+
+/* 実行委員リストのデザイン */
+.executive-member ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.executive-member li {
+    font-size: 1em;
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* 役職デザイン */
+.executive-member .role {
+    font-weight: bold;
+    color: #0056b3;
+    width: 200px; /* 固定幅で揃える */
+}
+
+/* 名前デザイン */
+.executive-member .name {
+    font-size: 1em;
+    color: #333;
 }
