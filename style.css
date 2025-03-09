@@ -69,6 +69,22 @@ footer {
     background: #0d8af2;
 }
 
+/* フォーム提出ボタン */
+.questionnaire-button {
+    display: inline-block;
+    background: #FF5722;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.questionnaire-button:hover {
+    background: #E64A19;
+}
+
 /* メインコンテンツ */
 main {
     padding: 25px;
